@@ -1,0 +1,20 @@
+digraph {
+	node [color=lightblue2 height=.1 label="Curve edges" shape=record style=filled]
+	node1 [label="{ <w0> or | <w1> common } | { <w2> diagnosis | <w3> gallstones } | { <w4> liver | <w5> cbd }"]
+	node2 [label="{ <w0> biliary | <w1> gallbladder } | { <w2> by | <w3> ercp } | { <w4> retrograde | <w5> cholangiopancreatography }"]
+	node1:w3 -> node2:w2
+	node3 [label="{ <w0> by | <w1> be } | { <w2> cases | <w3> study } | { <w4> has | <w5> cystic }"]
+	node1:w3 -> node3:w2
+	node4 [label="{ <w0> ercp | <w1> gallstone } | { <w2> retrograde | <w3> surgery } | { <w4> which | <w5> group }"]
+	node2:w3 -> node4:w2
+	node5 [label="{ <w0> gallbladder | <w1> or } | { <w2> this | <w3> an } | { <w4> gallstone | <w5> ultrasound }"]
+	node2:w3 -> node5:w2
+	node6 [label="{ <w0> biliary | <w1> cholecystectomy } | { <w2> this | <w3> as } | { <w4> diagnosis | <w5> patient }"]
+	node3:w3 -> node6:w2
+	node7 [label="{ <w0> biliary | <w1> stones } | { <w2> cases | <w3> pancreatitis } | { <w4> patient | <w5> two }"]
+	node3:w3 -> node7:w2
+	node8 [label="{ <w0> or | <w1> endoscopic } | { <w2> cholecystectomy | <w3> laparoscopic } | { <w4> gallstone | <w5> lithotripsy }"]
+	node4:w3 -> node8:w2
+	node9 [label="{ <w0> biliary | <w1> were } | { <w2> or | <w3> by } | { <w4> as | <w5> gallstones }"]
+	node4:w3 -> node9:w2
+}
